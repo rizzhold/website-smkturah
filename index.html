@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Turah 01 Bogor - Modern Campus</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-graduation-cap" style="font-size: 1.5rem;"></i> SMK TURAH 01
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" data-page="beranda">Beranda</a></li>
+            <li><a href="#" class="nav-item" data-page="profil">Profil</a></li>
+            <li><a href="#" class="nav-item" data-page="akademik">Akademik</a></li>
+            <li><a href="#" class="nav-item" data-page="guru">Guru</a></li>
+            <li><a href="#" class="nav-item" data-page="berita">Berita</a></li>
+            <li><a href="#" class="nav-item" data-page="galeri">Galeri</a></li>
+        </ul>
+        <button class="nav-btn" id="daftar-btn"><i class="fas fa-edit"></i> Daftar</button>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="main-content">
+
+        <!-- 1. HALAMAN BERANDA -->
+        <section id="beranda" class="page-section active-page">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-text animate-up">
+                    <div class="hero-badge"><i class="fas fa-sparkles"></i> Sekolah Pusat Keunggulan</div>
+                    <h1>Turn Your Ambition into <span>Achievement</span></h1>
+                    <p>Membentuk siswa-siswi SMK Turah 01 Bogor menjadi tenaga ahli profesional yang siap menghadapi tantangan dunia industri global.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary switch-btn" data-target="akademik">Jelajahi Akademik</button>
+                        <button class="btn-secondary switch-btn" data-target="profil"><i class="fas fa-play-circle"></i> Lihat Profil</button>
+                    </div>
+                    <div class="stat-box">
+                        <h3>99%</h3>
+                        <p>Tingkat Penempatan Kerja & Alumni Sukses</p>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container animate-fade">
+                    <img src="assets/images/halaman-depan.jpg" alt="Gedung SMK Turah 01 Bogor" class="hero-img">
+                </div>
+            </div>
+
+            <!-- SEKSI JURUSAN (SLIDER GESER KANAN) -->
+            <div class="jurusan-section">
+                <div class="section-header">
+                    <h2>Jurusan Keahlian</h2>
+                    <p>Geser ke kanan untuk melihat program keahlian favoritmu</p>
+                </div>
+
+                <div class="jurusan-slider-container">
+                    <div class="jurusan-slider">
+                        <!-- Card 1: TKJ -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/jurusan/tkj.jpg" alt="Teknisi Komputer Jaringan" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Teknisi Komputer & Jaringan (TKJ)</h3>
+                                <p>Menguasai perakitan komputer, instalasi jaringan fiber optik, hingga konfigurasi router dan keamanan cloud server.</p>
+                                <button class="btn-readmore btn-detail" data-jurusan="tkj">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: RPL -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/jurusan/rpl.jpg" alt="Rekayasa Perangkat Lunak" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                                <p>Fokus pada pengembangan software, pemrograman web modern, aplikasi mobile Android/iOS, dan pengelolaan database.</p>
+                                <button class="btn-readmore btn-detail" data-jurusan="rpl">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: DKV -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/jurusan/dkv.jpg" alt="Desain Komunikasi Visual" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Desain Komunikasi Visual (DKV)</h3>
+                                <p>Mempelajari seni grafis digital, ilustrasi, branding produk, fotografi industri, hingga desain UI/UX aplikasi.</p>
+                                <button class="btn-readmore btn-detail" data-jurusan="dkv">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: PSPT -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/jurusan/pspt.jpg" alt="Produksi dan Siaran Program TV" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Produksi & Siaran Program TV (PSPT)</h3>
+                                <p>Mengasah keterampilan videografi, pengoperasian kamera studio, video editing profesional, dan manajemen broadcasting.</p>
+                                <button class="btn-readmore btn-detail" data-jurusan="pspt">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEKSI EKSTRAKURIKULER (SLIDER GESER KANAN) -->
+            <div class="jurusan-section" style="margin-top: 50px;">
+                <div class="section-header">
+                    <h2>Ekstrakurikuler</h2>
+                    <p>Kembangkan bakat, kedisiplinan, dan minat non-akademikmu di sini</p>
+                </div>
+
+                <div class="jurusan-slider-container">
+                    <div class="jurusan-slider">
+                        <!-- Ekskul 1: JIC -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/jic.jpg" alt="Japanese Indonesian Club" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Japanese Indonesian Club (JIC)</h3>
+                                <p>Komunitas pecinta budaya Jepang dan Indonesia. Mempelajari bahasa, kebudayaan, seni, hingga pertukaran budaya.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="jic">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Ekskul 2: Pramuka -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/pramuka.jpg" alt="Pramuka" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Pramuka (Gugus Depan)</h3>
+                                <p>Membentuk karakter disiplin, kemandirian, kepemimpinan, dan keterampilan bertahan di alam terbuka.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="pramuka">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Ekskul 3: Paskibra -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/paskibra.jpg" alt="Paskibra" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Pasukan Pengibar Bendera (Paskibra)</h3>
+                                <p>Melatih ketahanan fisik, kedisiplinan tinggi, kekompakan baris-berbaris, dan rasa cinta tanah air.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="paskibra">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Ekskul 4: PMR -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/pmr.jpg" alt="PMR" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Palang Merah Remaja (PMR)</h3>
+                                <p>Fokus pada pertolongan pertama, kesehatan remaja, jiwa kemanusiaan, dan bakti sosial masyarakat.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="pmr">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Ekskul 5: Karate -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/karate.jpg" alt="Karate" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Seni Bela Diri Karate</h3>
+                                <p>Seni bela diri untuk melatih ketahanan mental, pertahanan diri, kebugaran fisik, dan prestasi olahraga.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="karate">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+
+                        <!-- Ekskul 6: Tahsin -->
+                        <div class="jurusan-card">
+                            <img src="assets/banner/ekskul/tahsin.jpg" alt="Tahsin Al-Qur'an" class="jurusan-banner">
+                            <div class="jurusan-body">
+                                <h3>Tahsin Al-Qur'an</h3>
+                                <p>Program perbaikan bacaan Al-Qur'an sesuai tajwid, hafalan surat-surat pendek, dan pembentukan akhlak mulia.</p>
+                                <button class="btn-readmore btn-ekskul-detail" data-ekskul="tahsin">Selengkapnya &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WADAH DINAMIS DETAIL JURUSAN & EKSKUL -->
+        <section id="detail-jurusan" class="page-section"></section>
+        <section id="detail-ekskul" class="page-section"></section>
+
+        <!-- 2. HALAMAN PROFIL -->
+        <section id="profil" class="page-section">
+            <div class="dark-section animate-up">
+                <div class="dark-content">
+                    <h2>Profil Sekolah: Peluang Terbaik untuk Mengubah Mimpi.</h2>
+                    <p>Berdiri sejak 2015, SMK Turah 01 Bogor berkomitmen tinggi memberikan pendidikan kejuruan berkualitas tinggi dengan fasilitas lab modern dan kerja sama erat bersama industri.</p>
+                    <div class="dark-stats">
+                        <div class="dark-stat-item">
+                            <h4>30%</h4>
+                            <p>Praktik Industri Nyata</p>
+                        </div>
+                        <div class="dark-stat-item">
+                            <h4>95%</h4>
+                            <p>Langsung Kerja / Kuliah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-image-box">
+                    <img src="assets/images/suasana-sekolah.jpg" alt="Suasana Sekolah SMK Turah 01 Bogor">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. HALAMAN AKADEMIK -->
+        <section id="akademik" class="page-section">
+            <div class="features-section">
+                <h2>Akademik & Program Keunggulan</h2>
+                <p>Pilih jurusan terbaik sesuai minat dan bakatmu untuk masa depan gemilang</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card animate-up">
+                        <i class="fas fa-laptop-code feature-icon"></i>
+                        <h3>Teknisi Komputer & Jaringan</h3>
+                        <p>Belajar perakitan komputer, manajemen server cloud, mikrotik, hingga keamanan jaringan profesional.</p>
+                    </div>
+                    <div class="feature-card animate-up" style="animation-delay: 0.2s;">
+                        <i class="fas fa-code feature-icon"></i>
+                        <h3>Rekayasa Perangkat Lunak</h3>
+                        <p>Menguasai pembuatan web, aplikasi mobile, hingga arsitektur database modern.</p>
+                    </div>
+                    <div class="feature-card animate-up" style="animation-delay: 0.4s;">
+                        <i class="fas fa-palette feature-icon"></i>
+                        <h3>Desain Komunikasi Visual</h3>
+                        <p>Mempelajari komunikasi visual, multimedia, editing video, dan seni desain digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. HALAMAN GURU -->
+        <section id="guru" class="page-section">
+            <div class="features-section">
+                <h2>Dewan Guru & Staff</h2>
+                <p>Dididik dan dibimbing oleh tenaga pengajar profesional dan berpengalaman di bidangnya</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-chalkboard-user feature-icon"></i>
+                        <h3>Drs. Budi Santoso, M.Pd</h3>
+                        <p>Kepala Sekolah & Pengampu Mata Pelajaran Manajemen Kepemimpinan.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-tie feature-icon"></i>
+                        <h3>Siti Aminah, S.Kom</h3>
+                        <p>Ketua Kompetensi Keahlian Teknisi Komputer dan Jaringan.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-graduate feature-icon"></i>
+                        <h3>Ahmad Fauzi, S.T</h3>
+                        <p>Instruktur Utama Rekayasa Perangkat Lunak.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HALAMAN BERITA -->
+        <section id="berita" class="page-section">
+            <div class="features-section">
+                <h2>Berita & Pengumuman Terbaru</h2>
+                <p>Informasi seputar kegiatan dan agenda penting sekolah</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-newspaper feature-icon"></i>
+                        <h3>Penerimaan Siswa Baru (PPDB) 2026</h3>
+                        <p>Pendaftaran gelombang pertama resmi dibuka mulai bulan depan. Dapatkan potongan khusus!</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy feature-icon"></i>
+                        <h3>Juara 1 LKS tingkat Nasional</h3>
+                        <p>Siswa TKJ SMK Turah 01 berhasil memenangkan kompetisi keahlian tingkat nasional.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-handshake feature-icon"></i>
+                        <h3>Job Fair & Industrial Gathering</h3>
+                        <p>Kerja sama penempatan kerja sama dengan 20+ perusahaan multinasional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. HALAMAN GALERI -->
+        <section id="galeri" class="page-section">
+            <div class="features-section">
+                <h2>Galeri Kampus & Kegiatan</h2>
+                <p>Dokumentasi aktivitas belajar mengajar serta fasilitas penunjang sekolah</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-images feature-icon"></i>
+                        <h3>Praktik Laboratorium Komputer</h3>
+                        <p>Suasana praktikum jaringan dan pemrograman siswa-siswi di lab modern.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-images feature-icon"></i>
+                        <h3>Studio DKV & Podcast</h3>
+                        <p>Fasilitas multimedia lengkap untuk kebutuhan produksi konten dan siaran.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-images feature-icon"></i>
+                        <h3>Kegiatan Ekstrakurikuler</h3>
+                        <p>Berbagai aktivitas positif mulai dari Paskibra, PMR, hingga Rohis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER KONTAK GLOBAL -->
+    <footer id="kontak">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>SMK Turah 01 Bogor</h3>
+                <div class="map-box">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.341103683058!2d106.7891!3d-6.5971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c1b5b5b5b5%3A0x0!2zQm9nb3I!5e0!3m2!1sid!2sid!4v1600000000000" 
+                        width="100%" 
+                        height="180" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-list">
+                    <li><i class="fab fa-whatsapp"></i> 085187656199</li>
+                    <li><i class="fas fa-phone"></i> 085187656199</li>
+                    <li><i class="fas fa-envelope"></i> ipurasiaipam@gmail.com</li>
+                    <li><i class="fas fa-globe"></i> admin@smkturah01bogor.sch.id</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Setiabudi No.32, RT.05/RW.03, Kec. Sindangbarang, Bogor Barat, Kota Bogor, Jawa Barat 16117</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Tautan Terkait</h3>
+                <ul class="footer-links">
+                    <li><a href="#">&gt; SMK INFOKOM</a></li>
+                    <li><a href="#">&gt; PPDB Online</a></li>
+                    <li><a href="#">&gt; Kemendikbudristek</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SMK Turah 01 Bogor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FILE DATA JURUSAN -->
+    <script src="pages/jurusan/tkj.js"></script>
+    <script src="pages/jurusan/rpl.js"></script>
+    <script src="pages/jurusan/dkv.js"></script>
+    <script src="pages/jurusan/pspt.js"></script>
+
+    <!-- FILE DATA EKSKUL -->
+    <script src="pages/ekskul/jic.js"></script>
+    <script src="pages/ekskul/pramuka.js"></script>
+    <script src="pages/ekskul/paskibra.js"></script>
+    <script src="pages/ekskul/pmr.js"></script>
+    <script src="pages/ekskul/karate.js"></script>
+    <script src="pages/ekskul/tahsin.js"></script>
+
+    <!-- SCRIPT UTAMA LOGIKA SPA -->
+    <script src="script.js"></script>
+</body>
+</html>
