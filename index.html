@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Turah 01 Bogor - Modern Campus</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-smk.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/core/base.css">
+    <link rel="stylesheet" href="styles/layout/navbar.css">
+    <link rel="stylesheet" href="styles/layout/hero.css">
+    <link rel="stylesheet" href="styles/layout/footer.css">
+    <link rel="stylesheet" href="styles/components/cards.css">
+    <link rel="stylesheet" href="styles/components/sections.css">
+    <link rel="stylesheet" href="styles/components/dividers.css">
+    <link rel="stylesheet" href="styles/features/pages.css">
+    <link rel="stylesheet" href="styles/features/berita.css">
+    <link rel="stylesheet" href="styles/features/prestasi.css">
+    <link rel="stylesheet" href="styles/features/akademik.css">
+    <link rel="stylesheet" href="styles/features/galeri.css">
+    <link rel="stylesheet" href="styles/features/profil.css">
+    <link rel="stylesheet" href="styles/features/ulasan.css">
+    <link rel="stylesheet" href="styles/features/daftar.css">
+    <link rel="stylesheet" href="styles/effects/animations.css">
+    <link rel="stylesheet" href="styles/effects/scroll-effects.css">
+    <link rel="stylesheet" href="styles/core/font-display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+<body>
+
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="assets/images/logo-smk.png" alt="Logo SMK Turah 01 Bogor" class="nav-logo-img"> SMK TURAH 01
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" data-page="beranda">Beranda</a></li>
+            <li><a href="#" class="nav-item" data-page="profil">Profil</a></li>
+            <li><a href="#" class="nav-item" data-page="berita">Berita</a></li>
+            <li><a href="#" class="nav-item" data-page="akademik">Akademik</a></li>
+            <li><a href="#" class="nav-item" data-page="galeri">Galeri</a></li>
+            <li><a href="#" class="nav-item" data-page="ulasan">Ulasan</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="nav-btn" id="daftar-btn"><i class="fas fa-edit"></i> Daftar</button>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Buka menu navigasi">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main class="main-content">
+
+        <!-- Beranda -->
+        <section id="beranda" class="page-section active-page">
+            <div class="hero">
+                <div class="hero-text animate-up">
+                    <div class="hero-badge"><i class="fas fa-sparkles"></i> Sekolah Pusat Keunggulan</div>
+                    <h1>Turn Your Ambition into <span>Achievement</span></h1>
+                    <p>Membuka jalan sukses, SMK Turah 01 Bogor menjadi lembaga pilihan tepat yang siap membimbing siswa bernalar kritis, kreatif, dan profesional di industri digital.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary switch-btn" data-target="akademik">Jelajahi Akademik</button>
+                        <button class="btn-secondary switch-btn" data-target="profil"><i class="fas fa-play-circle"></i> Lihat Profil</button>
+                    </div>
+                    <div class="stat-box">
+                        <h3>80%</h3>
+                        <p>Tingkat Penempatan Kerja & Alumni Sukses</p>
+                    </div>
+                </div>
+
+                <div class="hero-image-container animate-fade">
+                    <img src="assets/images/halaman-depan.jpg" alt="Gedung SMK Turah 01 Bogor" class="hero-img">
+                </div>
+            </div>
+
+            <!-- Sambutan -->
+            <div class="sambutan-section animate-up" style="margin-top: 70px;">
+                <p class="sambutan-text">
+                    Selamat datang di SMK Turah 01 Bogor — sekolah menengah kejuruan yang berkomitmen mencetak generasi muda berkarakter, kompeten, dan siap bersaing di era industri digital. Kami percaya bahwa pendidikan bukan hanya soal nilai akademik, tetapi juga tentang bagaimana setiap siswa tumbuh menjadi pribadi yang tangguh, kreatif, dan berintegritas tinggi. Di sini, setiap siswa dibimbing oleh tenaga pengajar profesional, didukung fasilitas laboratorium modern, serta dilibatkan langsung dalam program magang bersama perusahaan mitra industri. Kami membangun lingkungan belajar yang aman, nyaman, dan menyenangkan, sehingga setiap siswa dapat mengeksplorasi minat dan bakatnya tanpa batas. Melalui kurikulum berbasis industri, kegiatan ekstrakurikuler yang beragam, serta pembinaan karakter yang berkelanjutan, kami siap mengantarkan setiap anak menuju masa depan yang gemilang dan penuh peluang. Mari bersama-sama kita wujudkan impian, raih prestasi, dan bangun masa depan yang lebih cerah di SMK Turah 01 Bogor.
+                </p>
+                <p class="sambutan-signature">
+                    Muhamad Fatur Rahman, S.Pd., M.M.
+                </p>
+            </div>
+
+            <!-- Deskripsi -->
+            <div class="deskripsi-section animate-up">
+                <p class="deskripsi-text">
+                    SMK Turah 01 Bogor adalah sekolah menengah kejuruan yang berdiri sejak tahun 2010 dan berfokus pada pendidikan teknologi digital serta industri kreatif. Berlokasi di Jl. Setiabudi No.32, Sindangbarang, Bogor Barat, sekolah ini hadir sebagai jawaban atas tingginya kebutuhan tenaga kerja profesional di era digital. Untuk mendukung proses pembelajaran, tersedia berbagai fasilitas modern — mulai dari laboratorium komputer berstandar industri, studio DKV & podcast, perpustakaan digital, musholla, lapangan olahraga serbaguna, kantin sehat, ruang UKS, hingga area WiFi gratis di seluruh lingkungan kampus. Kurikulum yang diterapkan memadukan standar nasional dengan kebutuhan industri, diperkuat kemitraan bersama berbagai perusahaan teknologi dan industri kreatif untuk program magang, kunjungan industri, hingga penyaluran kerja lulusan. Dengan pendekatan ini, lebih dari 80% alumni terserap langsung di dunia kerja maupun melanjutkan pendidikan ke jenjang yang lebih tinggi.
+                </p>
+            </div>
+
+            <!-- Foto Sekolah -->
+            <div class="foto-sekolah-section animate-up">
+                <img src="assets/images/halaman-depan-sekolah.jpg" alt="Gedung SMK Turah 01 Bogor" class="foto-sekolah-img">
+            </div>
+
+            <!-- Kenapa Pilih Kami -->
+            <div class="features-section" style="margin-top: 60px;">
+                <h2>Kenapa Pilih Kami</h2>
+                <p>Alasan SMK Turah 01 Bogor menjadi pilihan tepat untuk masa depanmu</p>
+                <div class="feature-grid feature-grid-3col">
+                    <div class="feature-card feature-card--image">
+                        <div class="feature-card-img-wrap">
+                            <img src="assets/images/kpk/lab.jpg" alt="Fasilitas Lab Modern" class="feature-card-img">
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Fasilitas Lab Modern</h3>
+                            <p>Laboratorium komputer, studio DKV & podcast berstandar industri untuk praktik langsung.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card feature-card--image">
+                        <div class="feature-card-img-wrap">
+                            <img src="assets/images/kpk/guru.jpg" alt="Guru Berpengalaman" class="feature-card-img">
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Guru Berpengalaman</h3>
+                            <p>Diajar oleh tenaga pengajar profesional dan kompeten di bidangnya masing-masing.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card feature-card--image">
+                        <div class="feature-card-img-wrap">
+                            <img src="assets/images/kpk/industri.jpg" alt="Kerja Sama Industri" class="feature-card-img">
+                        </div>
+                        <div class="feature-card-body">
+                            <h3>Kerja Sama Industri</h3>
+                            <p>Kemitraan luas dengan dunia usaha dan industri untuk peluang magang dan kerja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Profil -->
+        <section id="profil" class="page-section">
+            <div class="dark-section animate-up">
+                <div class="dark-content">
+                    <h2>Profil Sekolah: Peluang Terbaik untuk Mengubah Mimpi.</h2>
+                    <p>Berdiri sejak 2010, SMK Turah 01 Bogor berkomitmen tinggi memberikan pendidikan kejuruan berkualitas tinggi dengan fasilitas lab modern dan kerja sama erat bersama industri.</p>
+                    <div class="dark-stats">
+                        <div class="dark-stat-item">
+                            <h4>30%</h4>
+                            <p>Praktik Industri Nyata</p>
+                        </div>
+                        <div class="dark-stat-item">
+                            <h4>95%</h4>
+                            <p>Langsung Kerja / Kuliah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-image-box">
+                    <img src="assets/images/suasana-sekolah.jpg" alt="Suasana Sekolah SMK Turah 01 Bogor">
+                </div>
+            </div>
+
+            <!-- Visi & Misi -->
+            <div class="visi-misi-section">
+                <h2>Visi & Misi</h2>
+                <div class="visi-misi-grid">
+                    <div class="visi-misi-card visi-misi-card--visi">
+                        <div class="visi-misi-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visi</h3>
+                        <p>"Menjadi sekolah menengah kejuruan unggulan yang menghasilkan lulusan berkarakter, kompeten di bidang teknologi digital, serta berdaya saing global pada tahun 2030."</p>
+                    </div>
+
+                    <div class="visi-misi-card">
+                        <div class="visi-misi-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misi</h3>
+                        <ul class="misi-list">
+                            <li>Menyelenggarakan pembelajaran berbasis industri yang relevan dengan perkembangan teknologi terkini.</li>
+                            <li>Membentuk karakter siswa yang berintegritas, disiplin, berwawasan lingkungan, dan berjiwa kewirausahaan.</li>
+                            <li>Memperluas jejaring kemitraan dengan Dunia Usaha dan Dunia Industri (DUDI) untuk optimalisasi penyaluran kerja dan praktik lapangan.</li>
+                            <li>Menyediakan fasilitas pendukung pembelajaran bernuansa modern guna mendukung kreativitas dan inovasi peserta didik.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sejarah -->
+            <div class="sejarah-section">
+                <h2>Sekilas Sejarah SMK Turah 01 Bogor</h2>
+
+                <div class="sejarah-card">
+                    <div class="sejarah-text collapsible-text">
+                        <p>SMK Turah 01 Bogor didirikan sebagai langkah nyata dalam menjawab tantangan era digitalisasi dan tingginya permintaan tenaga kerja profesional di bidang teknologi serta industri kreatif. Berawal dari sebuah gagasan sederhana untuk menyediakan pendidikan kejuruan yang relevan dengan perkembangan zaman, sekolah ini kini telah berkembang menjadi salah satu SMK pusat keunggulan di Kota Bogor.</p>
+                        <p>Sejak awal berdiri, SMK Turah 01 Bogor berkomitmen memadukan kurikulum nasional dengan standar industri modern. Dengan dukungan tenaga pengajar profesional dan fasilitas laboratorium berteknologi tinggi, sekolah ini terus mencetak lulusan yang inovatif, berkarakter kuat, dan siap bersaing di pasar kerja global.</p>
+                    </div>
+                    <button class="btn-toggle-text" type="button">Baca Selengkapnya <i class="fas fa-chevron-down"></i></button>
+
+                    <h3 class="timeline-heading">Jejak Langkah Kami</h3>
+                    <ul class="timeline">
+                        <li>
+                            <span class="timeline-year">2010</span>
+                            <h4>Dibangun & Berdiri</h4>
+                            <p>Resmi beroperasi dengan jurusan awal Teknik Komputer & Jaringan (TKJ).</p>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2013</span>
+                            <h4>Ekspansi Program Keahlian</h4>
+                            <p>Membuka jurusan RPL dan DKV untuk memenuhi kebutuhan industri perangkat lunak & desain.</p>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2016</span>
+                            <h4>Pembangunan Modern Campus</h4>
+                            <p>Peresmian gedung utama serta laboratorium komputer berstandar industri.</p>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2019</span>
+                            <h4>Peluncuran Jurusan PSPT</h4>
+                            <p>Menambahkan jurusan Produksi & Siaran Program Televisi serta memperluas jaringan magang industri.</p>
+                        </li>
+                        <li>
+                            <span class="timeline-year">2022</span>
+                            <h4>Predikat Sekolah Unggulan</h4>
+                            <p>Meraih akreditasi A dan menjadi SMK pusat binaan teknologi digital di Kota Bogor.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kepsek -->
+            <div class="kepsek-section">
+                <h2>Kepala Sekolah</h2>
+                <p>Pimpinan yang membimbing arah dan visi SMK Turah 01 Bogor</p>
+                <div id="kepsek-container" class="kepsek-container"></div>
+            </div>
+
+            <!-- Guru -->
+            <div class="guru-section">
+                <h2>Dewan Guru & Staff</h2>
+                <p>Dididik dan dibimbing oleh tenaga pengajar profesional dan berpengalaman di bidangnya</p>
+                <div class="feature-grid" id="guru-grid"></div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Berita -->
+        <section id="berita" class="page-section">
+            <div class="section-berita">
+                <div class="section-header">
+                    <h2>Berita Terkini</h2>
+                    <p>Informasi seputar kegiatan dan agenda penting sekolah</p>
+                </div>
+
+                <div class="berita-carousel">
+                    <button class="berita-nav berita-nav-prev" aria-label="Berita sebelumnya">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="berita-track-wrapper" data-lenis-prevent>
+                        <div class="berita-track" id="berita-track"></div>
+                    </div>
+
+                    <button class="berita-nav berita-nav-next" aria-label="Berita selanjutnya">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Prestasi -->
+            <div class="section-prestasi" style="margin-top: 60px;">
+                <h2>Prestasi</h2>
+                <p>Capaian membanggakan siswa-siswi dan sekolah dalam berbagai bidang</p>
+
+                <div class="prestasi-grid">
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="assets/images/prestasi/futsal.jpg" alt="Juara 1 Turnamen Futsal Kota Bogor" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Juara 1</span>
+                            <h3 class="prestasi-title">Turnamen Futsal Kota Bogor</h3>
+                            <p class="prestasi-desc">Tim futsal SMK Turah 01 berhasil menyabet juara 1 pada turnamen tingkat Kota Bogor tahun 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="assets/images/prestasi/badminton.jpg" alt="Juara 1 Badminton Kota Bogor" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Juara 1</span>
+                            <h3 class="prestasi-title">Badminton Kota Bogor</h3>
+                            <p class="prestasi-desc">Atlet badminton SMK Turah 01 meraih juara 1 pada kejuaraan badminton tingkat Kota Bogor.</p>
+                        </div>
+                    </div>
+
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="assets/images/berita/foto-siswa.jpg" alt="Siswa Aktif Pertama di Kota Bogor" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Penghargaan</span>
+                            <h3 class="prestasi-title">Siswa Aktif Pertama di Kota Bogor</h3>
+                            <p class="prestasi-desc">Dikenal sebagai siswa aktif pertama di Kota Bogor atas dedikasi dan prestasi yang membanggakan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prestasi-grid prestasi-grid--extra" id="prestasi-extra">
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="https://picsum.photos/id/1067/600/400" alt="Juara 2 Kompetisi Robotik Provinsi" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Juara 2</span>
+                            <h3 class="prestasi-title">Kompetisi Robotik Provinsi</h3>
+                            <p class="prestasi-desc">Tim robotik SMK Turah 01 berhasil meraih juara 2 pada kompetisi robotik tingkat Provinsi Jawa Barat 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="https://picsum.photos/id/1040/600/400" alt="Juara 1 Lomba Desain Poster Nasional" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Juara 1</span>
+                            <h3 class="prestasi-title">Lomba Desain Poster Nasional</h3>
+                            <p class="prestasi-desc">Siswa jurusan DKV menorehkan prestasi juara 1 pada lomba desain poster tingkat nasional tahun 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="prestasi-card">
+                        <div class="prestasi-media">
+                            <div class="prestasi-image-wrap">
+                                <img src="assets/images/prestasi/turnamen.jpg" alt="Juara 3 Turnamen Basket Antar-SMK" class="prestasi-banner">
+                            </div>
+                            <div class="prestasi-badge">
+                                <i class="fas fa-basketball-ball"></i>
+                            </div>
+                        </div>
+                        <div class="prestasi-body">
+                            <span class="prestasi-label">Juara 3</span>
+                            <h3 class="prestasi-title">Turnamen Basket Antar-SMK</h3>
+                            <p class="prestasi-desc">Tim basket SMK Turah 01 meraih juara 3 pada turnamen basket antar-SMK se-Kota Bogor 2025.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prestasi-toggle-wrapper">
+                    <button class="btn-prestasi-toggle" id="btn-prestasi-toggle">
+                        Lihat Selengkapnya <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Akademik -->
+        <section id="akademik" class="page-section">
+            <div class="section-jurusan">
+                <div class="section-header">
+                    <h2>Daftar Jurusan Keahlian</h2>
+                    <p>Didesain khusus untuk meningkatkan kompetensi dan kesiapan kerja di dunia industri modern.</p>
+                </div>
+
+                <div class="jurusan-slider-container" data-lenis-prevent>
+                    <div class="jurusan-slider" id="jurusan-slider"></div>
+                </div>
+
+                <div class="section-note section-note--summary">
+                    <p class="section-note-text">
+                        Dari daftar di atas, <strong>SMK Turah 01 Bogor</strong> memiliki
+                        <strong id="count-jurusan">0</strong> program keahlian yang dirancang khusus
+                        untuk menyiapkanmu menjadi tenaga profesional siap kerja di dunia industri modern.
+                        Setiap jurusan dilengkapi kurikulum berbasis industri, fasilitas laboratorium
+                        berstandar, serta program magang bersama perusahaan mitra. Kamu bebas memilih
+                        jurusan sesuai minat dan bakatmu — dan kami siap membimbingmu sampai siap
+                        bersaing di dunia kerja global.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-ekskul" style="margin-top: 60px;">
+                <div class="section-header">
+                    <h2>Kegiatan Ekstrakurikuler</h2>
+                    <p>Wadah mengasah bakat, kepemimpinan, dan minat siswa di luar kegiatan akademik.</p>
+                </div>
+
+                <div class="jurusan-slider-container" data-lenis-prevent>
+                    <div class="jurusan-slider" id="ekskul-slider"></div>
+                </div>
+
+                <div class="section-note section-note--summary">
+                    <p class="section-note-text">
+                        Dari daftar di atas, tersedia <strong id="count-ekskul">0</strong> kegiatan
+                        ekstrakurikuler sebagai wadah mengasah bakat, minat, dan kepemimpinanmu
+                        di luar jam pelajaran akademik. Setiap ekskul dibimbing oleh pembina
+                        profesional yang siap membantumu berkembang — mulai dari bidang seni,
+                        olahraga, kepramukaan, hingga keagamaan. Pilih ekskul yang paling sesuai
+                        dengan passion-mu, dan jadikan masa sekolahmu lebih berwarna!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Galeri -->
+        <section id="galeri" class="page-section">
+            <div class="section-galeri">
+                <h2>Galeri Kampus & Kegiatan</h2>
+                <p>Dokumentasi aktivitas belajar mengajar serta fasilitas penunjang sekolah</p>
+
+                <div class="galeri-kategori">
+                    <div class="galeri-kategori-header">
+                        <span class="galeri-kategori-num">01</span>
+                        <div class="galeri-kategori-title">
+                            <h3>Fasilitas Kampus</h3>
+                            <p>Berbagai sarana modern untuk mendukung pembelajaran</p>
+                        </div>
+                    </div>
+
+                    <div class="galeri-masonry">
+                        <figure class="galeri-item galeri-item-big">
+                            <img src="assets/images/galeri/lab-komputer.jpg" alt="Laboratorium Komputer">
+                            <figcaption>
+                                <span class="galeri-tag"><i class="fas fa-desktop"></i> Laboratorium</span>
+                                <h3>Laboratorium Komputer</h3>
+                                <p>Lab modern untuk praktikum jaringan & pemrograman siswa-siswi.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="galeri-item">
+                            <img src="assets/images/galeri/studio.jpg" alt="Studio DKV & Podcast">
+                            <figcaption>
+                                <span class="galeri-tag"><i class="fas fa-microphone"></i> Studio</span>
+                                <h3>Studio DKV & Podcast</h3>
+                                <p>Fasilitas multimedia lengkap.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="galeri-item">
+                            <img src="assets/images/galeri/perpustakaan.jpg" alt="Perpustakaan">
+                            <figcaption>
+                                <span class="galeri-tag"><i class="fas fa-book"></i> Literasi</span>
+                                <h3>Perpustakaan</h3>
+                                <p>Ruang baca nyaman & koleksi lengkap.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="galeri-item galeri-item-wide">
+                            <img src="assets/images/galeri/kantin.jpg" alt="Kantin Sekolah">
+                            <figcaption>
+                                <span class="galeri-tag"><i class="fas fa-utensils"></i> Kantin</span>
+                                <h3>Kantin Sekolah</h3>
+                                <p>Tempat favorit siswa untuk istirahat & makan bersama.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="galeri-kategori">
+                    <div class="galeri-kategori-header">
+                        <span class="galeri-kategori-num">02</span>
+                        <div class="galeri-kategori-title">
+                            <h3>Kegiatan Akademik & Praktik</h3>
+                            <p>Momen pembelajaran hingga pengalaman di dunia industri</p>
+                        </div>
+                    </div>
+
+                    <div class="galeri-featured">
+                        <figure class="galeri-featured-main">
+                            <img src="assets/images/kegiatan-praktik/suasana-kelas.jpg" alt="Suasana Kelas">
+                            <figcaption>
+                                <span class="galeri-tag"><i class="fas fa-chalkboard"></i> Kelas</span>
+                                <h3>Suasana Kelas</h3>
+                                <p>Pembelajaran interaktif bersama guru profesional di ruang kelas modern.</p>
+                            </figcaption>
+                        </figure>
+                        <div class="galeri-featured-stack">
+                            <figure class="galeri-featured-mini">
+                                <img src="assets/images/kegiatan-praktik/kunjungan-industri.jpg" alt="Kunjungan Industri">
+                                <figcaption>
+                                    <span class="galeri-tag"><i class="fas fa-industry"></i> Kunjungan</span>
+                                    <h3>Kunjungan Industri</h3>
+                                </figcaption>
+                            </figure>
+                            <figure class="galeri-featured-mini">
+                                <img src="assets/images/kegiatan-praktik/pkl.jpg" alt="Praktik Kerja Lapangan">
+                                <figcaption>
+                                    <span class="galeri-tag"><i class="fas fa-briefcase"></i> PKL</span>
+                                    <h3>Praktik Kerja Lapangan</h3>
+                                </figcaption>
+                            </figure>
+                            <figure class="galeri-featured-mini">
+                                <img src="assets/images/kegiatan-praktik/workshop.jpg" alt="Workshop">
+                                <figcaption>
+                                    <span class="galeri-tag"><i class="fas fa-tools"></i> Workshop</span>
+                                    <h3>Workshop & Pelatihan</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeri-kategori">
+                    <div class="galeri-kategori-header">
+                        <span class="galeri-kategori-num">03</span>
+                        <div class="galeri-kategori-title">
+                            <h3>Kegiatan Sekolah & Keagamaan</h3>
+                            <p>Rutinitas, acara, dan momen berharga yang membentuk karakter</p>
+                        </div>
+                    </div>
+
+                    <div class="galeri-editorial">
+                        <article class="galeri-editorial-item">
+                            <div class="galeri-editorial-media">
+                                <img src="assets/images/kegiatan/upacara.jpg" alt="Upacara Bendera">
+                                <span class="galeri-tag"><i class="fas fa-flag"></i> Upacara</span>
+                            </div>
+                            <div class="galeri-editorial-body">
+                                <span class="galeri-editorial-num">01</span>
+                                <h3>Upacara Bendera</h3>
+                                <p>Setiap Senin pagi, seluruh siswa-siswi mengikuti upacara bendera untuk menumbuhkan rasa cinta tanah air, kedisiplinan, dan jiwa nasionalisme.</p>
+                            </div>
+                        </article>
+
+                        <article class="galeri-editorial-item">
+                            <div class="galeri-editorial-media">
+                                <img src="assets/images/kegiatan/dhuha.jpg" alt="Sholat Dhuha">
+                                <span class="galeri-tag"><i class="fas fa-mosque"></i> Religius</span>
+                            </div>
+                            <div class="galeri-editorial-body">
+                                <span class="galeri-editorial-num">02</span>
+                                <h3>Sholat Dhuha Bersama</h3>
+                                <p>Kegiatan rutin sholat Dhuha berjamaah di musholla sekolah, sebagai wujud pembinaan karakter religius dan penguatan spiritual siswa.</p>
+                            </div>
+                        </article>
+
+                        <article class="galeri-editorial-item">
+                            <div class="galeri-editorial-media">
+                                <img src="assets/images/galeri/piket.jpg" alt="Piket Kelas">
+                                <span class="galeri-tag"><i class="fas fa-broom"></i> Kebersihan</span>
+                            </div>
+                            <div class="galeri-editorial-body">
+                                <span class="galeri-editorial-num">03</span>
+                                <h3>Piket Kelas</h3>
+                                <p>Siswa-siswi bergiliran membersihkan ruang kelas setiap hari, sebagai wujud pembinaan tanggung jawab dan kepedulian terhadap lingkungan belajar.</p>
+                            </div>
+                        </article>
+
+                        <article class="galeri-editorial-item">
+                            <div class="galeri-editorial-media">
+                                <img src="assets/images/galeri/literasi.jpg" alt="Literasi Pagi">
+                                <span class="galeri-tag"><i class="fas fa-book-open"></i> Literasi</span>
+                            </div>
+                            <div class="galeri-editorial-body">
+                                <span class="galeri-editorial-num">04</span>
+                                <h3>Literasi Pagi</h3>
+                                <p>Setiap pagi sebelum KBM dimulai, siswa-siswi membaca buku selama 15 menit untuk menumbuhkan minat baca dan memperluas wawasan.</p>
+                            </div>
+                        </article>
+
+                        <article class="galeri-editorial-item">
+                            <div class="galeri-editorial-media">
+                                <img src="assets/images/galeri/kbm.jpg" alt="Kegiatan Belajar Mengajar">
+                                <span class="galeri-tag"><i class="fas fa-chalkboard-user"></i> KBM</span>
+                            </div>
+                            <div class="galeri-editorial-body">
+                                <span class="galeri-editorial-num">05</span>
+                                <h3>Kegiatan Belajar Mengajar</h3>
+                                <p>Proses pembelajaran interaktif di kelas bersama guru profesional, mulai dari teori hingga praktik langsung sesuai jurusan masing-masing siswa.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Ulasan -->
+        <section id="ulasan" class="page-section">
+            <div class="ulasan-section">
+                <h2>Ulasan & Testimoni</h2>
+                <p>Bagikan pengalamanmu tentang SMK Turah 01 Bogor</p>
+
+                <div class="ulasan-overall">
+                    <div class="overall-score">
+                        <span class="overall-number" id="overall-number">0.0</span>
+                    </div>
+                    <div class="overall-divider"></div>
+                    <div class="overall-info">
+                        <span class="overall-label">Rating Keseluruhan</span>
+                        <div class="overall-stars" id="overall-stars"></div>
+                        <span class="overall-total" id="overall-total">Belum ada ulasan</span>
+                    </div>
+                </div>
+
+                <div class="ulasan-layout">
+                    <div class="ulasan-form-card">
+                        <h3><i class="fas fa-pen-fancy"></i> Kirim Ulasanmu</h3>
+                        <form id="ulasan-form">
+                            <div class="form-group">
+                                <label for="ulasan-nama">Nama Lengkap</label>
+                                <input type="text" id="ulasan-nama" placeholder="Contoh: Rina Pratiwi" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ulasan-email">Email</label>
+                                <input type="email" id="ulasan-email" placeholder="Contoh: rina@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input" id="rating-input">
+                                    <i class="far fa-star" data-value="1"></i>
+                                    <i class="far fa-star" data-value="2"></i>
+                                    <i class="far fa-star" data-value="3"></i>
+                                    <i class="far fa-star" data-value="4"></i>
+                                    <i class="far fa-star" data-value="5"></i>
+                                </div>
+                                <span class="rating-hint" id="rating-hint">Klik bintang untuk memberi rating</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ulasan-pesan">Pesan</label>
+                                <textarea id="ulasan-pesan" placeholder="Tulis pengalamanmu di sini..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit-ulasan">
+                                <i class="fas fa-paper-plane"></i> Kirim
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="ulasan-list-wrapper">
+                        <h3><i class="fas fa-comments"></i> Ulasan Terbaru</h3>
+                        <div class="ulasan-list" id="ulasan-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <template id="ulasan-card-template">
+                <article class="ulasan-card">
+                    <div class="ulasan-card-header">
+                        <div class="ulasan-avatar"></div>
+                        <div class="ulasan-user-info">
+                            <h4 class="ulasan-nama"></h4>
+                            <span class="ulasan-email"></span>
+                        </div>
+                    </div>
+                    <div class="ulasan-stars"></div>
+                    <p class="ulasan-pesan"></p>
+                    <span class="ulasan-date"><i class="far fa-calendar-alt"></i> <span class="ulasan-date-text"></span></span>
+                </article>
+            </template>
+        </section>
+
+    </main>
+
+    <!-- Detail Overlay (full-screen) -->
+    <div class="detail-overlay" id="detail-overlay" data-lenis-prevent>
+        <div class="detail-overlay-inner" id="detail-overlay-content"></div>
+    </div>
+
+    <!-- Template Berita -->
+    <template id="berita-card-template">
+        <article class="berita-card">
+            <img class="berita-banner" alt="" loading="lazy">
+            <div class="berita-body">
+                <div class="berita-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="berita-date-text"></span>
+                </div>
+                <h3 class="berita-title"></h3>
+                <div class="berita-full-content">
+                    <div class="berita-full-content-inner"></div>
+                </div>
+                <button type="button" class="berita-readmore">
+                    Baca Selengkapnya <span class="arrow">&rarr;</span>
+                </button>
+            </div>
+        </article>
+    </template>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>SMK Turah 01 Bogor</h3>
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.341103683058!2d106.7891!3d-6.5971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c1b5b5b5b5%3A0x0!2zQm9nb3I!5e0!3m2!1sid!2sid!4v1600000000000"
+                        width="100%"
+                        height="180"
+                        style="border:0; border-radius: 8px;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                    <a class="map-overlay-link" href="https://www.google.com/maps/search/?api=1&query=SMK+Turah+01+Bogor" target="_blank" rel="noopener" aria-label="Buka lokasi di Google Maps">
+                        <i class="fas fa-external-link-alt"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-list">
+                    <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> 081234567890</a></li>
+                    <li><a href="tel:081234567890"><i class="fas fa-phone"></i> 081234567890</a></li>
+                    <li><a href="mailto:smkturah01@gmail.com"><i class="fas fa-envelope"></i> smkturah01@gmail.com</a></li>
+                    <li><a href="https://rizzhold.github.io/website-smkturah/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> rizzhold.github.io/website-smkturah</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Setiabudi+No.32+RT.05+RW.03+Sindangbarang+Bogor+Barat" target="_blank" rel="noopener"><i class="fas fa-map-marker-alt"></i> Jl. Setiabudi No.32, RT.05/RW.03, Kec. Sindangbarang, Bogor Barat, Kota Bogor, Jawa Barat 16117</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-btn" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-btn" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="footer-social-btn" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="footer-social-btn" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <p class="footer-socials-note">
+                    Ikuti kami untuk update kegiatan dan informasi terbaru seputar SMK Turah 01 Bogor.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SMK Turah 01 Bogor. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Daftar -->
+    <div class="daftar-modal-overlay" id="daftar-modal-overlay">
+        <div class="daftar-modal" role="dialog" aria-modal="true" aria-labelledby="daftar-modal-title">
+            <button class="daftar-modal-close" id="daftar-modal-close" aria-label="Tutup">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div id="daftar-form-wrapper">
+                <div class="daftar-modal-header">
+                    <span class="daftar-modal-badge">
+                        <i class="fas fa-star"></i> PPDB 2026 Dibuka
+                    </span>
+                    <h2 id="daftar-modal-title">Daftar Sekarang</h2>
+                    <p>Isi data di bawah ini, tim kami akan menghubungimu dalam 1×24 jam.</p>
+                </div>
+
+                <form id="daftar-form">
+                    <div class="daftar-form-group">
+                        <label for="daftar-nama">Nama Lengkap <span class="req">*</span></label>
+                        <input type="text" id="daftar-nama" placeholder="Contoh: Rina Pratiwi" required>
+                    </div>
+
+                    <div class="daftar-form-group">
+                        <label for="daftar-email">Email <span class="req">*</span></label>
+                        <input type="email" id="daftar-email" placeholder="Contoh: rina@email.com" required>
+                    </div>
+
+                    <div class="daftar-form-group">
+                        <label for="daftar-wa">No. WhatsApp <span class="req">*</span></label>
+                        <input type="tel" id="daftar-wa" placeholder="Contoh: 081234567890" required>
+                    </div>
+
+                    <div class="daftar-form-group">
+                        <label for="daftar-jurusan">Jurusan Pilihan <span class="req">*</span></label>
+                        <select id="daftar-jurusan" required>
+                            <option value="" disabled selected>-- Pilih Jurusan --</option>
+                            <option value="TKJ">Teknisi Komputer & Jaringan (TKJ)</option>
+                            <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                            <option value="DKV">Desain Komunikasi Visual (DKV)</option>
+                            <option value="PSPT">Produksi & Siaran Program TV (PSPT)</option>
+                        </select>
+                    </div>
+
+                    <div class="daftar-form-group">
+                        <label for="daftar-pesan">Pesan (opsional)</label>
+                        <textarea id="daftar-pesan" placeholder="Ada pertanyaan? Tulis di sini..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-daftar">
+                        <i class="fas fa-paper-plane"></i> Kirim Pendaftaran
+                    </button>
+                </form>
+            </div>
+
+            <div id="daftar-success-wrapper" class="daftar-success" style="display: none;">
+                <div class="daftar-success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>Pendaftaran Terkirim!</h3>
+                <p>Terima kasih, <strong id="daftar-success-nama">Siswa</strong>!<br>Kami akan menghubungimu lewat WhatsApp dalam 1×24 jam. 🎉</p>
+                <button class="btn-success-close" id="btn-success-close">Selesai</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <script src="content/jurusan/tkj.js"></script>
+    <script src="content/jurusan/rpl.js"></script>
+    <script src="content/jurusan/dkv.js"></script>
+    <script src="content/jurusan/pspt.js"></script>
+
+    <script src="content/ekskul/jic.js"></script>
+    <script src="content/ekskul/pramuka.js"></script>
+    <script src="content/ekskul/paskibra.js"></script>
+    <script src="content/ekskul/pmr.js"></script>
+    <script src="content/ekskul/karate.js"></script>
+    <script src="content/ekskul/tahsin.js"></script>
+
+    <script src="content/akademik/ekskul/jic.js"></script>
+    <script src="content/akademik/ekskul/pramuka.js"></script>
+    <script src="content/akademik/ekskul/paskibra.js"></script>
+    <script src="content/akademik/ekskul/pmr.js"></script>
+    <script src="content/akademik/ekskul/karate.js"></script>
+    <script src="content/akademik/ekskul/tahsin.js"></script>
+
+    <script src="content/berita/ppdb-2026.js"></script>
+    <script src="content/berita/pentas-seni.js"></script>
+    <script src="content/berita/bakti-sosial.js"></script>
+    <script src="content/berita/pramuka-garuda.js"></script>
+    <script src="content/berita/magang-jepang.js"></script>
+
+    <script src="content/guru/fatur.js"></script>
+    <script src="content/guru/deska.js"></script>
+    <script src="content/guru/angga.js"></script>
+    <script src="content/guru/arya.js"></script>
+    <script src="content/guru/bimoo.js"></script>
+    <script src="content/guru/febriansyah.js"></script>
+    <script src="content/guru/fadly.js"></script>
+    <script src="content/guru/nakula.js"></script>
+    <script src="content/guru/fauzan.js"></script>
+    <script src="content/guru/rofiq.js"></script>
+    <script src="content/guru/raditya.js"></script>
+    <script src="content/guru/radzan.js"></script>
+    <script src="content/guru/fariz.js"></script>
+
+    <script src="content/ulasan/rina.js"></script>
+    <script src="content/ulasan/budi.js"></script>
+    <script src="content/ulasan/sari.js"></script>
+    <script src="content/ulasan/andi.js"></script>
+    <script src="content/ulasan/maya.js"></script>
+    <script src="content/ulasan/rendra.js"></script>
+
+    <!-- Effects (engine + scroll) -->
+    <script src="scripts/effects/engine.js"></script>
+    <script src="scripts/effects/scroll-effects.js"></script>
+
+    <!-- Effects — Animations per section -->
+    <script src="scripts/effects/animations/hero.js"></script>
+    <script src="scripts/effects/animations/general.js"></script>
+    <script src="scripts/effects/animations/berita.js"></script>
+    <script src="scripts/effects/animations/prestasi.js"></script>
+    <script src="scripts/effects/animations/akademik.js"></script>
+    <script src="scripts/effects/animations/galeri.js"></script>
+    <script src="scripts/effects/animations/profil.js"></script>
+    <script src="scripts/effects/animations/ulasan.js"></script>
+
+    <!-- Core -->
+    <script src="scripts/core/data.js"></script>
+
+    <!-- Layout & Components -->
+    <script src="scripts/layout/navbar.js"></script>
+    <script src="scripts/components/sections.js"></script>
+
+    <!-- Features -->
+    <script src="scripts/features/pages.js"></script>
+    <script src="scripts/features/prestasi.js"></script>
+    <script src="scripts/features/profil.js"></script>
+    <script src="scripts/features/berita.js"></script>
+    <script src="scripts/features/akademik.js"></script>
+    <script src="scripts/features/ulasan.js"></script>
+    <script src="scripts/features/daftar.js"></script>
+
+</body>
+</html>
